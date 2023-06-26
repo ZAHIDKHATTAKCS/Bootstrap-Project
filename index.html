@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+
+    <!-- link to add Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <!-- link to add Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+    <title>My first project of Bootstrap</title>
+</head>
+
+<body>
+
+    <!-- navigartion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid border border-3 border-warning rounded-circle p-0 me-3"
+                    src="includes/images/brand.jpg" style="width: 100px; height: 100px;">
+                <span class="h4">Zahid's Inc.</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-target="#navbardiv" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbardiv">
+                <ul class="navbar-nav ms-auto text-white">
+                    <!-- ms mean margin start it is used for float the content to end -->
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link text-white">What you'll learn?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#questions">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#insturctors">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navigation -->
+
+    <!-- showcase/jombotron -->
+    <section class="bg-dark text-white pt-4">
+        <div class="container d-md-flex justify-content-between">
+            <div>
+                <h1 class="d-sm-flex text-center">Become a&nbsp;<span class="text-warning">Web Developer</span></h1>
+                <!-- d-sm-flex mean to show flex in smaller resolution and align the text to the center when someone is visit from small screen -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque praesentium architecto animi
+                    nobis quo, obcaecati cumque aut. Quia eos dolorum iste, molestiae expedita deleniti ut consectetur
+                    consequuntur veniam repellendus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum rem quidem vero velit in ab
+                    reprehenderit rerum officiis, quisquam est suscipit, laboriosam consequuntur facilis similique
+                    laborum id beatae molestiae aut.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem officia voluptas labore ea modi
+                    aliquid nesciunt temporibus, sapiente, maxime, mollitia consequuntur expedita. Earum consequuntur
+                    maiores veritatis iste provident facere. <br><br>
+
+                    <button type="button" class="btn btn-primary" data-bs-target="#modal" data-bs-toggle="modal">Enroll
+                        now</button>
+                </p>
+            </div>
+
+            <img src="./includes/images/bwebdeveloper.jpg"
+                class="img-fluid ms-md-4 rounded border border-5 border-warning" width="500">
+            <!-- d-none d-sm-block  which means to don't show the image in small resolution-->
+        </div><br><br>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light">
+        <div class="d-flex d-sm p-2">
+            <h5>Sign Up for Our Newsletter</h5>
+            <div class="ms-auto">
+                <form class="d-flex">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Email Address">
+
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-sm ms-2">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section><br><br>
+    <!-- end of newsletter -->
+
+    <!-- start of card section -->
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                <!-- card 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light d-flex d-sm-flex">
+                        <span class="bi bi-laptop fs-1 text-center"></span>
+                        <h3 class="text-center card-title">Virtual</h3>
+                        <p class="text-center p-3 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Excepturi aspernatur veniam praesentium sint, impedit illo ad accusamus laboriosam nemo
+                            labore animi dolorem sit, vitae recusandae doloribus modi est dignissimos dolorum!</p>
+                        <button class="btn btn-primary btn-sm w-50 mx-auto mb-3">Read More</button>
+                    </div>
+                </div><br>
+                <!-- card 1 end -->
+
+                <!-- card 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-light d-flex d-sm-flex">
+                        <span class="bi bi-person-square fs-1 text-center"></span>
+                        <h3 class="text-center card-title">In Person</h3>
+                        <p class="text-center p-3 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Excepturi aspernatur veniam praesentium sint, impedit illo ad accusamus laboriosam nemo
+                            labore animi dolorem sit, vitae recusandae doloribus modi est dignissimos dolorum!</p>
+                        <button class="btn btn-primary btn-sm mb-3 w-50 mx-auto">Read More</button>
+                    </div>
+                </div>
+                <!-- end card 2 -->
+
+                <!-- card 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light d-flex d-sm-flex">
+                        <span class="bi bi-people fs-1 text-center"></span>
+                        <h3 class="text-center card-title">Hybrid</h3>
+                        <p class="text-center p-3 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Excepturi aspernatur veniam praesentium sint, impedit illo ad accusamus laboriosam nemo
+                            labore animi dolorem sit, vitae recusandae doloribus modi est dignissimos dolorum!</p>
+                        <button class="btn btn-primary btn-sm mb-3 w-50 mx-auto">Read More</button>
+                    </div>
+                </div>
+                <!-- end card 3 -->
+            </div>
+        </div>
+    </section><br><br>
+    <!-- end of cards section -->
+
+    <!-- what you'll learn section -->
+    <section class="bg-white" id="learn">
+        <div class="container d-flex justify-content-between">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./includes/images/img3.jpg" class="img-fluid w-100 border border-3 border-dark rounded">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-capitalize text-center">What you'll Learn</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestias sed assumenda aspernatur
+                        asperiores architecto maxime officia unde eveniet ipsam voluptatum, deleniti, quod et pariatur
+                        excepturi minus. Corrupti, harum consequuntur?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id, nostrum eum blanditiis
+                        eveniet quis velit nam odit ex sequi. In pariatur architecto dolorem quaerat aperiam corrupti,
+                        omnis optio fugit?</p>
+                    <button type="button" class="btn btn-outline-primary"><span class="bi bi-chevron-double-right">
+                        </span> Read More</button>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- What we Offer Section -->
+    <section class="bg-dark text-white g-2">
+        <div class="container p-4 d-md-flex justify-content-between ">
+            <div>
+                <h4 class="d-sm-flex text-center">What We Offer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatum rem. Quasi alias, natus
+                    accusamus doloribus non quibusdam nobis sed doloremque sequi. Minima voluptas doloribus ipsa id
+                    ipsam iure accusantium?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam molestias excepturi cumque,
+                    explicabo reprehenderit cupiditate saepe dolorem aliquam doloribus veritatis ut voluptatum! Sequi
+                    laborum et, quo harum aliquam ipsa numquam.</p>
+            </div>
+            <div>
+                <img src="./includes/images/img5.jpg"
+                    class="img-fluid w-100 border border-3 border-warning rounded ms-md-5">
+            </div>
+
+        </div>
+    </section><br><br>
+
+    <!-- Questions section -->
+    <section id="questions">
+        <div class="container">
+            <h3 class=" text-center">Frequently Asked Questions</h3>
+            <div class="accordion">
+                <!-- Start accordion 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+
+                        <button type="button" class="accordion-button " data-bs-target="#accordion"
+                            data-bs-toggle="collapse">
+                            <span class="text-capitalize">How do i get enrolled in this course?</span>
+                        </button>
+                    </h2>
+                    <div class="collapse accordion-collapse hide" id="accordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, harum odit debitis temporibus
+                        cumque laudantium iusto? Laboriosam dolor ut ratione voluptas, iure sit accusamus facilis animi
+                        ex quidem incidunt numquam.
+
+                    </div>
+                </div>
+                <!-- End accordion 1 -->
+
+                <!-- Start accrodion 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#accordion2" data-bs-toggle="collapse">
+                            <span class="text-capitalize">what is the cost of this course?</span>
+                        </button>
+                    </h2>
+                    <div class="collapse accordion-collapse hide" id="accordion2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque perferendis vero quos, at
+                        reiciendis quibusdam eos id omnis deserunt iste, inventore aspernatur dolor adipisci eius
+                        recusandae quia. Laboriosam, fuga. Vero.
+                    </div>
+                </div>
+                <!-- End accordion 2 -->
+
+                <!-- Start accordion 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button type="button" class="accordion-button" data-bs-target="#accordion3"
+                            data-bs-toggle="collapse">
+                            <span class="text-capitalize">What is the duration of this course?</span>
+                        </button>
+                    </h2>
+                    <div class="collapse accordion-collapse hide" id="accordion3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt porro saepe neque, ab omnis
+                        quasi veritatis, qui facilis esse similique in voluptatum error atque. Architecto rem error
+                        facere eaque eveniet?<br>
+                        <center>
+                            <img src="includes/images/img4.jpg" class="img-fluid w-25 h-25">
+                        </center>
+                    </div>
+
+                </div>
+                <!-- End accordion 3 -->
+            </div>
+        </div>
+    </section><br><br>
+    <!-- end of questions section -->
+
+
+    <!-- Instructors Section -->
+    <section id="insturctors" class="bg-primary text-light">
+        <div class="container">
+            <h2 class="text-center p-3">Our Instructors</h2>
+            <p class="text-center pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga eos quos
+                rerum quia tenetur. Provident non blanditiis aspernatur facilis cupiditate. Mollitia, excepturi!
+                Libero ex, voluptatibus reiciendis est eos ea.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Facilis veritatis omnis officia quod dignissimos ullam officiis corporis asperiores
+                architecto, blanditiis odit dicta repellendus magni praesentium, minima consequatur molestiae quia
+                aliquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis omnis officia
+                quod dignissimos ullam officiis corporis asperiores architecto, blanditiis odit dicta repellendus
+                magni praesentium, minima consequatur molestiae quia aliquam.
+            </p>
+
+            <!-- start of cards of instructors -->
+            <div class="row g-3">
+                <!-- card 1 -->
+                <div class="col-md-3 col-lg-3">
+                    <div class="card text-dark text-center">
+                        <img src="./includes/images/card1.jpeg" class="img-fluid">
+                        <!-- https://randomuser.me/portraits/men/11.jpg this link generates random images we can also write women instead of men -->
+                        <div class="card-title">
+                            <h3 class="pt-3">Muhammad Salih</h3>
+                        </div>
+                        <div class="card-body">
+                            This is Muhammad Salih from LandiKottal. He is a Good Python programmer and also a good
+                            motivational speaker we have. <br><br>
+
+                            <a href="https://www.facebook.com/muhammadsalih13" target="_blank"><span
+                                    class="bi bi-facebook px-2"></span></a>
+                            <a href="https://www.instagram.com/byt_guru/?hl=en" target="_blank"><span
+                                    class="bi bi-instagram px-2"></span></a>
+                            <a href="https://www.linkedin.com/in/byt-guru-a1161a270/" target="_blank"><span
+                                    class="bi bi-linkedin px-2"></span></a>
+                            <a href="https://www.youtube.com/@bytguru" target="_blank"><span
+                                    class="bi bi-youtube px-2"></span></a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card 1 end -->
+
+                <!-- card 2 -->
+                <div class="col-md-3 col-lg-3">
+                    <div class="card text-dark text-center">
+                        <img src="./includes/images/card2.jpg" class="img-fluid">
+                        <!-- https://randomuser.me/portraits/men/11.jpg this link generates random images we can also write women instead of men -->
+                        <div class="card-title">
+                            <h3 class="pt-4">Mr Umer</h3>
+                        </div>
+                        <div class="card-body">
+                            This is Mr Umer from Deer. He is a Good Ethical Hacker and a good learner of Cybersecurity
+                            and Networking.
+                            <br><br>
+
+                            <a href="https://www.facebook.com/profile.php?id=100069782653240" target="_blank"><span
+                                    class="bi bi-facebook px-2"></span></a>
+                            <a href="https://www.instagram.com/mrr__umer/?hl=en" target="_blank"><span
+                                    class="bi bi-instagram px-2"></span></a>
+                            <a href="https://www.linkedin.com/in/umer-hakim-048079258/" target="_blank"><span
+                                    class="bi bi-linkedin px-2"></span></a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 end -->
+
+                <!-- card 3 -->
+                <div class="col-md-3 col-lg-3">
+                    <div class="card text-dark text-center">
+                        <img src="./includes/images/carrrd3.jpg" class="img-fluid">
+                        <!-- https://randomuser.me/portraits/men/11.jpg this link generates random images we can also write women instead of men -->
+                        <div class="card-title">
+                            <h3 class="pt-3 fw-bold">Zahid Khattak</h3>
+                        </div>
+                        <div class="card-body pt-0 ">
+                            This is me Zahid Khattak from Karak. I am passionate Frontend Web Developer. I am currently
+                            wroking on Frontend web technologies and my ambition is to become full stack developer.
+                            <br><br>
+
+                            <a href="https://www.facebook.com/muhammadzahid.zahid.733" target="_blank"><span
+                                    class="bi bi-facebook px-2"></span></a>
+                            <a href="https://www.instagram.com/imzahidkhattak/?hl=en" target="_blank"><span
+                                    class="bi bi-instagram px-2"></span></a>
+                            <a href="https://www.linkedin.com/in/muhammadzahid5/" target="_blank"><span
+                                    class="bi bi-linkedin px-2"></span></a>
+                            <a href="https://www.youtube.com/channel/UCN3D09bHokP6tctQVbsyGUg" target="_blank"><span
+                                    class="bi bi-youtube px-2"></span></a>
+                            <a href="https://www.tiktok.com/@zahid_khattak4u?_t=8dTxU0B3Nnl&_r=1"><span
+                                    class="bi bi-tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 end -->
+
+                <!-- card 4 -->
+                <div class="col-md-3 col-lg-3">
+                    <div class="card text-dark text-center">
+                        <img src="./includes/images/card3img.jpeg" class="img-fluid">
+                        <!-- https://randomuser.me/portraits/men/11.jpg this link generates random images we can also write women instead of men -->
+                        <div class="card-title">
+                            <h3 class="pt-3">Muhammad Huzaifa</h3>
+                        </div>
+                        <div class="card-body pt-0">
+                            This is Muhammad Huzaifa from Mohmand Agancy. By profession Muhammad Huzaifa is a good
+                            Graphic Designer.
+                            <br><br>
+
+                            <a href="https://www.facebook.com/profile.php?id=100079561644656" target="_blank"><span
+                                    class="bi bi-facebook px-2"></span></a>
+                            <a href="https://www.instagram.com/huzaifa_soft5611/?hl=en" target="_blank"><span
+                                    class="bi bi-instagram px-2"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 end -->
+
+            </div><br><br>
+    </section><br><br>
+
+
+    <!-- contact and map section -->
+
+    <section id="contact">
+        <div class="container d-md-flex justify-content-between">
+                <div>
+                    <h2 class="text-center pb-4">Contact Info</h2>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <span class="bi bi-geo-alt"></span>
+                            <span class="fw-bold">Address : </span>Phase 7 Hayatabad Peshawar, Pakistan
+                            <hr>
+                        </li>
+                        <li>
+                            <span class="bi bi-phone"></span>
+                            <span class="fw-bold">Phone :</span> 0334 8854074
+                            <hr>
+                        </li>
+                        <li>
+                            <span class="bi bi-whatsapp"></span>
+                            <span class="fw-bold">Whatsapp :</span> 0345 6497998
+                            <hr>
+                        </li>
+                        <li>
+                            <span class="bi bi-envelope"></span>
+                            <span class="fw-bold">Email :</span> zahidkhattakcs@gmail.com
+                            <hr>
+                        </li>
+                        <li>
+                            <span class="bi bi-code"></span>
+                            <span class="fw-bold">Developer :</span> ZAHID KHATTAK
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+                <div id="map">
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:600px;height:400px;"><div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=University+of+Agriculture+Peshawar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecoder" href="https://www.bootstrapskins.com/themes" id="grab-map-info">premium bootstrap themes</a><style>#my-map-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer" class="mt-4 bg-dark text-light">
+        <a href="#" class="bi bi-arrow-up-circle-fill display-6 d-flex justify-content-end text-decoration-none me-4 pt-4"></a>
+        <div class="container p-1">
+            <p class="text-center h6">
+                Copyright &copy; 2023 
+            </p>
+            <p class="text-center h6">
+                All right reserved.
+            </p>
+            <p class="text-center">
+                Zahid Khattak
+            </p>
+            
+        </div>
+
+    </section>
+    <!-- end of footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
